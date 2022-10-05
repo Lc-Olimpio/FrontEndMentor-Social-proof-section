@@ -1,0 +1,141 @@
+$primary-color: hsl(300, 43%, 22%);
+$secondary-color: hsl(333, 80%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh ;
+  background-image: url(../images/bg-pattern-bottom-desktop.svg), url(../images/bg-pattern-top-desktop.svg);
+  background-position: bottom right,top left;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+  width: 8em;
+  color: $primary-color;
+  font-size: 3.2em;
+}
+
+.main {
+  width: 80em;
+  margin: 2em;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.pitch {
+  width: 40%;
+
+   p {
+    width: 24em;
+    margin-top: 1.5em;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5em;
+   }
+}
+
+.review-rating{
+  width: 40%;
+  height: 13em;
+  text-align: center;
+}
+
+.rating {
+  margin: 1em 0;
+  padding: 1em;
+  background: hsl(300, 24%, 96%);
+  width: 90%;
+
+  p {
+    display: inline;
+    margin-left: 2em;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  &:first-child {
+    margin-left: -3em;
+  }
+
+  &:last-child {
+    margin-left: 3em;
+  }
+}
+
+.comment-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  background: $primary-color;
+  color: hsl(0, 0, 100%);
+  width: 32%;
+  height: 17em;
+  padding: 2.5em;
+  border-radius: 0.5em;
+  
+  p{
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
+
+  &:first-child {
+    margin-top: -1em;
+  }
+
+  &:last-child {
+    margin-top: 1em;
+  }
+}
+
+.user {
+  display: flex;
+  margin: 1em 0;
+
+  img {
+    width: 3em;
+    border-radius: 50%;
+  }
+
+  div {
+    margin: auto 0;
+    margin-left: 1em;
+   
+    .name {
+      font-weight: 500;
+    }
+
+    span {
+      color: hsl(333, 80%, 67%);
+      font-size: 1.2em;
+    }
+  }
+  
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1em;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
